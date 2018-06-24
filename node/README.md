@@ -1,4 +1,4 @@
-#1 Installed Packages
+# Installed Packages
 
 Here are the packages that I have installed globally on my machine:
 
