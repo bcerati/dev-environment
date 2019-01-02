@@ -26,7 +26,7 @@ For my daily JavaScript codes I'm using VS Code. You can find my configuration i
 
 ## Some tools
 
-* ```sudo apt install -y curl keepass2 git vlc zsh kate vim fonts-powerline tilda python3-pip python-pip```
+* ```sudo apt install -y curl keepass2 git vlc zsh kate vim fonts-powerline tilda python3-pip python-pip net-tools openssh-server openssh-client```
 
 ## zsh
 
@@ -68,6 +68,18 @@ composer global require hirak/prestissimo
 
 ```bash
 sudo npm install -g n nodemon yarn
+```
+
+## Android Studio
+
+```bash
+sudo snap install android-studio --classic
+```
+
+Then accept licences of SDK tools
+
+```bash
+sdkmanager --licenses
 ```
 
 # Icons
