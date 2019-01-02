@@ -1,4 +1,4 @@
-# contact@boris-web.fr - zshrc
+# contact@boris-cerati.fr - zshrc
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -97,3 +97,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 . /home/boris/.borisrc
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/boris/.sdkman"
+[[ -s "/home/boris/.sdkman/bin/sdkman-init.sh" ]] && source "/home/boris/.sdkman/bin/sdkman-init.sh"
+
+export PATH=~/.local/bin:$PATH

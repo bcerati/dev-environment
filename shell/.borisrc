@@ -12,3 +12,5 @@ BULLETTRAIN_GIT_UNTRACKED=" - U "
 BULLETTRAIN_GIT_RENAMED=" - E "
 
 alias ll='ls -alh'
+alias dev='cd && cd Documents/Dev/'
+alias e='exit'

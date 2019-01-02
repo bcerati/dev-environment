@@ -1,11 +1,16 @@
-[user]
-	name = Boris Cerati
-    email = contact@boris-web.fr
-[alias]
-    co = checkout
-    ci = commit
-    st = status
-    br = branch
 [core]
-	excludesfile = /home/boris/.gitignore
-	editor = vim
+	excludesfile = /home/boris/.gitignore_global
+[user]
+	email = contact@boris-cerati.fr
+	name = Boris CERATI
+[alias]
+	st = status
+	r = remote
+
+	c = commit -am
+
+	# list branches sorted by last modified
+	b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+
+	# list aliases
+	la = "!git config -l | grep alias | cut -c 7-"
