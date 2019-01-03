@@ -19,3 +19,12 @@ export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+function line {
+        printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+}
+
+function dockerps {
+        dashes=`line`; docker ps --format '\nID:\t{{.ID}}\nName:\t{{.Names}}\nPorts:\t{{.Ports}}\nImage:\t{{.Image}}\n\n###' | sed -r "s/###/$dashes/g"
+}
+
