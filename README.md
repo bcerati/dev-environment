@@ -36,6 +36,8 @@ For my daily JavaScript codes I'm using VS Code. You can find my configuration i
 
 [Bullet train for zsh](https://github.com/caiogondim/bullet-train.zsh)
 
+https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+
 ## PHP 7.3
 
 ```bash
